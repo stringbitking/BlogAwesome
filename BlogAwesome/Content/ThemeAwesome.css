@@ -81,3 +81,13 @@
   font-size: 20px;
   color: #C0C3CC; }
 
+@media (max-width: 1500px) {
+  #main-blazon-wrapper {
+    top: -280px; }
+
+  #main-blazon-wrapper .main-blazon {
+    width: 300px; }
+
+  .awesome-caption > h1 {
+    font-size: 50px; } }
+

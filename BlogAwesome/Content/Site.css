@@ -1,0 +1,13 @@
+﻿body,
+html {
+    height: 100%;
+}
+
+body {
+    color: white;
+}
+
+#test1 {
+    width: 100%;
+}
+

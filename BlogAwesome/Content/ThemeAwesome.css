@@ -1,0 +1,83 @@
+.awesome-main-wrapper {
+  background-color: white;
+  height: 100%;
+  overflow: auto;
+  background: url(Images/black-tile.jpg); }
+
+.awesome-main-header {
+  height: 400px;
+  background: url(Images/rain-1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-bottom: 5px solid white; }
+
+.awesome-page-wrapper {
+  overflow: visible;
+  position: relative;
+  height: calc(100% - 400px); }
+
+#main-blazon-wrapper {
+  margin: auto;
+  padding-top: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -350px;
+  z-index: 1000;
+  text-align: center;
+  overflow: hidden; }
+
+.awesome-page-wrapper .awesome-page-content {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: #2b2b2b;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -150px;
+  border: 2px solid #B3C2C5; }
+.awesome-page-wrapper .content-wrapper {
+  height: 100%;
+  border: 10px solid white;
+  min-height: 1200px;
+  -webkit-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.5); }
+
+.awesome-caption {
+  padding: 0 50px;
+  height: 250px;
+  background-color: #EEEEEE;
+  position: relative; }
+
+.awesome-title, .awesome-caption > h1 {
+  font-family: Lobster, cursive; }
+
+.awesome-caption > h1 {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 70px;
+  color: #A4A4A4;
+  font-size: 80px; }
+
+.awesome-caption .right-caption {
+  right: 50px; }
+
+.page-content-wrapper > header h1 {
+  /*font-family: Lobsteer, cursive;*/
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  font-size: 60px;
+  color: #C0C3CC; }
+
+.article-wrapper {
+  font-family: 'Indie Flower', cursive;
+  padding: 0 45px;
+  font-size: 20px;
+  color: #C0C3CC; }
+

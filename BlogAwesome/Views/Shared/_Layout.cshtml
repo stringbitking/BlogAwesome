@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/kendo/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
+    @Scripts.Render("~/bundles/app")
+</head>
+<body ng-app="BlogAwesome">
+    <div class="awesome-main-wrapper">
+        <div class="awesome-main-header">
+
+        </div>
+        <div class="awesome-page-wrapper">
+            @*<img id="main-blazon" src="~/Content/Images/main-blazon.png" />*@
+            <div id="main-blazon-wrapper">
+                @*<img id="main-blazon" src="~/Content/Images/main-blazon.png" />*@
+                <ul id="scene" class="scene border fill">
+                    <li class="layer" data-depth="0.10"><img src="~/Content/Images/main-blazon.png" /></li>
+                </ul>
+            </div>
+            <div class="awesome-page-content">
+                <div class="content-wrapper">
+                    <div class="awesome-caption clearfix">
+                        <h1 class="left-caption">BlogAwesome</h1>
+                        <h1 class="right-caption">Stringbitking</h1>
+                    </div>
+                    <div ng-controller="NavigationController">
+                        <ul kendo-menu style="display: inline-block; width: 100%; box-sizing: border-box;"
+                            k-orientation="menuOrientation"
+                            k-rebind="menuOrientation"
+                            k-on-select="onSelect(kendoEvent)">
+                            <li>Home</li>
+                            <li>Not Home</li>
+                            <li>Whatever</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="~/Scripts/paralax/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
